@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joab Amos D Viado">
+    <title>NASE - National Aeronautics and Space Exploration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/mint-choc/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>NASE</h1>
+        <img id="logo" src="images/logo.svg" alt="planet logo in black">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Trips We Offer</a></li>
+                <li><a href="#slideshow">Our Vehicles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="light-mode">
+            <img src="images/night-mode.png" alt="light mode/dark mode icon">
+        </button>
+    </header>
+
+    <main id="background">
+        <section id="about">
+            <h2 id="welcome-header">Welcome to NASE</h2>
+            <div class="container">
+                <p id="inner-text">Welcome to the <span id="company-name">National Aeronautics and Space
+                        Exploration</span>! Embark on a journey beyond the bounds of Earth with our pioneering space
+                    exploration website. From the craters of the Moon to the distant realms of exoplanets, our platform
+                    is your launchpad to the infinite wonders of space. Join us as we push the boundaries of
+                    exploration, innovation, and discovery, forging a path towards a future among the stars.</p>
+                <img id="greenPlanet" src="images/greenPlanet.jpeg" alt="landscape of a red planet">
+            </div>
+        </section>
+
+        <section id="trips">
+            <h2 id="trip-header">Trips We Offer <span id="small">(as of 2024)</span></h2>
+            <div id="services">
+                <h3>Arrakis</h3>
+                <div class="article">
+                    <p>Arrakis is a desert planet that is the only source of the spice melange, crucial for space
+                        travel. Its harsh desert landscapes, dominated by massive sand dunes and sandworms.<br><span
+                            class="price">$89,999</span></p>
+                    <img src="images/arrakis.jpg" alt="Arrakis, desert planet">
+                </div>
+                <h3>Coruscant</h3>
+                <div class="article">
+                    <p>Coruscant, aka the "Galactic Capital", is a planet entirely covered by a sprawling cityscape.
+                        It's the political and cultural heart of the galaxy, home to institutions like the Jedi Temple
+                        and the Senate, bustling with diverse life and activity.<br><span class="price">$99,999</span>
+                    </p>
+                    <img src="images/coruscant.jpg" alt="A city planet filled with skyscrapers">
+                </div>
+                <h3>Hoth</h3>
+                <div class="article">
+                    <p>Hoth is a freezing, barren planet primarily covered in snow and ice. It serves as a Rebel
+                        Alliance base, offering strategic advantage against the Empire but posing significant dangers
+                        due to its harsh conditions.<br><span class="price">$39,999</span></p>
+                    <img src="images/hoth.jpg" alt="A planet covered in snow">
+                </div>
+                <h3>Naboo</h3>
+                <div class="article">
+                    <p>Naboo is a serene planet with beautiful landscapes and advanced cities. Home to both Gungans and
+                        humans, it also known for its vibrant ecosystems, rolling plains, and elegant cities. Naboo's
+                        natural beauty, with its vast lakes and verdant landscapes, contrasts with its technologically
+                        advanced cities, such as Theed, the capital<br><span class="price">$109,999</span></p>
+                    <img src="images/naboo.webp" alt="A planet resembling Earth">
+                </div>
+            </div>
+        </section>
+
+        <section id="slideshow">
+            <!-- Vehicle descriptions taken from Wookiepedia / starwars.fandom.com -->
+            <h2 id="slideshow-heading">Our Vehicles</h2>
+            <p>Choose from any of our 4 very capable vehicles at no additional cost.</p>
+            <div class="carousel-container">
+                <figure class="slide">
+                    <img src="images/razorCrest.jpeg" alt="The razor crest in midair">
+                    <figcaption>The <span class="vehicle">Razor Crest</span> was an ST-70 class Razor Crest M-111
+                        Assault Ship used by the Mandalorian bounty hunter Din Djarin. Prior to the rise of the Galactic
+                        Empire, it served as a military patrol craft</figcaption>
+                </figure>
+                <figure class="slide">
+                    <img src="images/tie-fighter.jpg" alt="A TIE Fighter ship in space">
+                    <figcaption>The <span class="vehicle">TIE Fighter</span> is the standard Imperial starfighter seen
+                        in massive numbers throughout most of the Galactic Civil War and onward.</figcaption>
+                </figure>
+                <figure class="slide">
+                    <img src="images/xWing.jpeg" alt="Two X-Wing Starfighters moving in space">
+                    <figcaption>The <span class="vehicle">X-Wing Starfighter</span> is marked by their distinctive
+                        S-foils that resembled the High Galactic script's character "X" in attack formation. They were
+                        heavily armed with four laser cannons on the S-foils and proton torpedo launchers in the
+                        fuselage. X-wings were designed for dogfighting and long missions.</figcaption>
+                </figure>
+                <figure class="slide">
+                    <img src="images/falcon.jpg" alt="The Millenium Falcon flying in space">
+                    <figcaption>The <span class="vehicle">Millenium Falcon</span> is a Corellian YT-1300 light freighter
+                        built around 60 BBY. Earning a legendary status under their ownership, the ship was most
+                        famously used by the smugglers Han Solo and Chewbacca before, during, and following the Galactic
+                        Civil War.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="random-joke">
+            <h3>Misc</h3>
+            <p>Here's a random joke before we send you off<br>(for compensation, incase you don't make it to your
+                destination)</p>
+            <div id="joke"></div>
+            <button id="joke-button" type="button">Make me laugh</button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button id="submit" type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Joab Viado. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
